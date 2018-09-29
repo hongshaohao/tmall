@@ -1,0 +1,135 @@
+@charset "utf-8";
+//头部导航栏
+.header_top{
+    font-size: 12px;
+    color: #999;
+    background: #eee;
+}
+.header_top .header_nav{
+       
+       height: 32px;
+       line-height: 32px;
+}
+.header_top .header_nav p{
+    float: left;
+    span{
+        margin-left: 20px;
+        a{
+         color:#999;
+         &:hover{
+             color:red;
+         }
+        }
+    }
+}
+ 
+  
+.header_top .header_nav ul{
+    float:right;
+    li{
+        float: left;
+        padding: 0 10px 0 10px;
+        position: relative;
+        a{
+            color: #999;
+            height: 32px;
+            line-height: 32px;
+            &:hover{
+                color:red;
+                text-decoration: underline;
+                b:after{
+                    transform:rotate(180deg); 
+                    top:12px;
+                }
+            }
+        }
+    }
+}
+.header_top .header_nav ul b{
+    &:after{
+        content:"";display:inline-block;width:0px;height:0px;border:3px solid transparent;border-top:3px solid #bbb; margin-left: 3px;position: absolute;top: 15px; transition:all 0.3s;
+    }
+}
+
+
+
+
+//头部搜索框
+.header_bot{
+    background: #fff;
+    position: relative;
+}
+.header_bot .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header_bot .search{
+    padding-top: 38px;
+    width: 625px;
+    margin: 0 auto;
+    form{
+        border: 2px solid #ff0036;
+        border-right: 0;
+        height: 36px;
+        input{
+            width: 481px;
+            height: 26px;
+            padding: 5px;
+            border: 0;
+        }
+        button{
+            border: 0;
+            width: 132px;
+            height: 36px;
+            background: #ff0036;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            line-height: 36px;
+        }
+    }
+    .chanpin{
+        padding-top: 7px;
+        font-size: 14px;
+        margin-left: -13px;
+        li{
+            float: left;
+            padding: 0 12px;
+           
+            border-right: 1px solid #ccc;
+            a{
+                
+                
+                
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .huise{
+                color: #999;
+                
+            }
+            .hongse{
+                color: #ff0036;
+                
+            }
+        }
+        .niunai{
+            border: 0;
+        }
+    }
+}
+.header_bot .fenlei{
+    //position: absolute;
+    width: 1230px;
+}
+
+
+
+
+
+
+
+      
+     
