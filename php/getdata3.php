@@ -1,7 +1,7 @@
 <?php  
 	require "conn.php";
 
-	$result=mysql_query("select * from infomation");
+	$result=mysql_query("select * from fengqiang");
 
 	$arrdata=array();
 	for($i=0;$i<mysql_num_rows($result);$i++){

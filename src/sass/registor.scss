@@ -1,0 +1,291 @@
+@charset "utf-8";
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .icon {
+        width: 1em; height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;   
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .clear{clear: both;}
+    @font-face {
+        font-family: 'iconfont';
+        src: url('../fonts/iconfont.eot');
+        src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+      }
+      .iconfont{
+        font-family:"iconfont" !important;
+        font-size:16px;font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .main_content {
+        width: 300px;
+        height: 400px;
+        position: relative;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .075);
+        background: rgba(255, 255, 255, .85);
+        margin: 100px auto;
+        padding: 0 23px;
+        color: #333;
+
+        //登录头
+        .title {
+            margin-bottom: 15px;
+            line-height: 60px;
+            overflow: hidden;
+
+            .denglu strong {
+                float: left;
+                font-size: 20px;
+                color: #e31256;
+                font-family: "Microsoft YaHei",
+                    微软雅黑,
+                    黑体;
+            }
+
+            .counter {
+                color: #969696;
+                float: right;
+
+                a {
+                    color: #e31256;
+                }
+            }
+        }
+
+        //登录方式
+        .methods {
+            height: 30px;
+
+            span {
+                padding-right: 30px;
+            }
+        }
+
+        //登录表单--手机登录
+
+        .form_b input {
+            box-shadow: none;
+            border: 1px solid #CFCFCF;
+            background-color: #fff;
+            vertical-align: middle;
+            padding: 10px 8px;
+            line-height: 1.5;
+            font-size: 14px;
+            width: 284px;
+
+        }
+
+        .form_b {
+            .user_ph {
+                position: relative;
+                height: 44px;
+                margin-bottom: 26px;
+
+                #dy_mobile {
+                    background-position: 5px 0;
+                    position: relative;
+
+                    &:focus {
+                        box-shadow: 0 0 4px 1px rgba(32, 157, 230, .4);
+                        border-color: #A5D4ED;
+                    }
+                }
+
+                .remind_text {
+                    white-space: nowrap;
+                    margin-top: 4px;
+                    color: #999;
+                    top: 100%;
+                    left: 0;
+                }
+            }
+
+            .dy_mima {
+                color: #333;
+                margin-bottom: 30px;
+
+                .mima {
+                    position: relative;
+                    width: 300px;
+                    height: 44px;
+                    margin-bottom: 28px;
+
+                    #dy_password {
+                        width: 138px;
+                        background-position: 5px -50px;
+                        display: inline-block;
+                        float: left;
+                        position: absolute;
+                        height: auto;
+
+                        &:focus {
+                            box-shadow: 0 0 4px 1px rgba(32, 157, 230, .4);
+                            border-color: #A5D4ED;
+                        }
+                    }
+
+                    #password,
+                    #reword {
+                        background-position: 5px -50px;
+                        display: inline-block;
+                        float: left;
+                        position: absolute;
+                    }
+
+                    .remind_text {
+                        white-space: nowrap;
+                        margin-top: 4px;
+                        color: #999;
+                        position: absolute;
+                        top: 44px;
+                        left: 0;
+                        line-height: 1.5;
+                    }
+                }
+
+                .phonecode {
+                    width: 112px;
+                    height: 41px;
+                    border: 1px solid #d9d9d9;
+                    background: linear-gradient(to bottom, #fcfcfc, #f2f2f2);
+                    text-decoration: none;
+                    cursor: pointer;
+                    padding: 0 8px;
+                    display: inline-block;
+                    line-height: 41px;
+                    font-weight: 700;
+                    color: #666;
+                    margin-left: 10px;
+                    text-align: center;
+                    float: right;
+                }
+            }
+
+            .zhuce {
+                margin: 0;
+                margin-bottom: 28px;
+                height: 68px;
+            }
+
+            .submit {
+                background: #F8296D;
+                white-space: nowrap;
+                text-align: center;
+                line-height: 40px;
+                font-weight: 700;
+                font-size: 14px;
+                cursor: pointer;
+                padding: 0 30px;
+                height: 40px;
+                color: #fff;
+                border: 0;
+            }
+
+            p {
+                margin: 10px 0;
+                overflow: hidden;
+
+                a {
+                    color: #ed145b;
+                }
+            }
+            .yhxy{
+                text-align: right;
+            }
+
+
+
+        }
+
+        .accont {
+            div {
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+            p {
+                overflow: hidden;
+                margin-bottom: 15px;
+
+                a {
+                    margin-right: 10px;
+                    display: inline-block;
+                    width: 43px;
+                    height: 43px;
+                    margin-right: 10px;
+                    float: left;
+                    background: url(https://f1.jmstatic.com/static_passport/dist/v1.0.28403/images/icon_light.jpg) no-repeat;
+                }
+
+                .a2 {
+                    background-position: -57px 0;
+                }
+
+                .a3 {
+                    background-position: -114px 0;
+                }
+
+                .a4 {
+                    background-position: -169px 0;
+                }
+
+                .a5 {
+                    background-position: -224px 0;
+                }
+
+                .a6 {
+                    background-position: -57px -54px;
+                }
+
+                .a7 {
+                    background-position: -169px -54px;
+                }
+
+                .a8 {
+                    background-position: -224px 0;
+                }
+
+                span {
+                    line-height: 30px;
+                    position: relative;
+                    left: -7px;
+                    cursor: pointer;
+                    float: left;
+                    margin-top: 5px;
+
+                    i {
+                        width: 18px;
+                        height: 17px;
+                        display: inline-block;
+                        position: absolute;
+                        right: -21px;
+                        top: 7px;
+                        transition: .3s ease-in;
+                        background: url(https://f1.jmstatic.com/static_passport/dist/v1.0.28403/images/icon_light.jpg) no-repeat;
+                        background-position: -274px -23px;
+                    }
+                }
+            }
+
+            .yincang {
+                display: none;
+            }
+        }
+    }
